@@ -1,0 +1,6 @@
+-   id: format-graphql
+    name: Format GraphQL
+    description: This hook formats GraphQL schemas
+    entry: format-graphql
+    language: node
+    types: [graphql]
