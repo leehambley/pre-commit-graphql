@@ -8,6 +8,6 @@
 -   id: format-graphql
     name: Format GraphQL
     description: This hook formats GraphQL schemas
-    entry: npx format-graphql
+    entry: npx format-graphql --write=true
     language: node
     files: '\w+\.graphql$'
