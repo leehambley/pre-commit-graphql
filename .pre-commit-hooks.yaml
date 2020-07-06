@@ -11,3 +11,10 @@
     entry: npx format-graphql --write=true
     language: node
     files: '\w+\.graphql$'
+
+-   id: generate-graphidocs
+    name: Generate static site documentation
+    description: Runs using @graphidocs/docs from npmjs
+    entry: npx graphidocs -s ./schema.graphql --force -o ./doc/schema
+    language: node
+    files: '\w+\.graphql$'
