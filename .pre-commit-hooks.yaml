@@ -16,5 +16,6 @@
     name: Generate static site documentation
     description: Runs using @graphidocs/docs from npmjs
     entry: npx graphidocs -s ./schema.graphql --force -o ./doc/schema
+    pass_filenames: false # the filename is hard-coded
     language: node
     files: '\w+\.graphql$'
