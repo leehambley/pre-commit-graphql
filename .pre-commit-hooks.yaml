@@ -1,21 +1,21 @@
 -   id: graphql-schema-linter
     name: GraphQL Schema Linter
     description: This hook links GraphQL SDL files.
-    entry: npx graphql-schema-linter
+    entry: npx graphql-schema-linter@2.0.1
     language: node
     files: '\w+\.graphql$'
 
 -   id: format-graphql
     name: Format GraphQL
     description: This hook formats GraphQL schemas
-    entry: npx format-graphql --write=true
+    entry: npx format-graphql@1.4.0 --write=true
     language: node
     files: '\w+\.graphql$'
 
 -   id: generate-graphidocs
     name: Generate static site documentation
     description: Runs using @graphidocs/docs from npmjs
-    entry: npx graphidocs -s ./schema.graphql --force -o ./doc/schema
+    entry: npx graphidocs@1.0.6 -s ./schema.graphql --force -o ./doc/schema
     pass_filenames: false # the filename is hard-coded
     language: node
     files: '\w+\.graphql$'
